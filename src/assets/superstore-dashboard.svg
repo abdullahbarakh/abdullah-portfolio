@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="ssTitle">
+  <title id="ssTitle">Superstore Analytics Dashboard preview</title>
+  <defs>
+    <linearGradient id="ssBar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8C5B3E"/>
+      <stop offset="1" stop-color="#a06a49"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="96" fill="#FBF9F5"/>
+  <rect x="0" y="95" width="1600" height="1" fill="#E9E2DA"/>
+  <text x="56" y="58" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="800" fill="#3F332B">Superstore Sales Performance</text>
+  <rect x="1268" y="34" width="140" height="30" rx="15" fill="#F0EBE2" stroke="#E9E2DA"/>
+  <text x="1338" y="54" font-family="Manrope, Arial, sans-serif" font-size="14" fill="#6F665F" text-anchor="middle">All Regions</text>
+  <rect x="1424" y="34" width="120" height="30" rx="15" fill="#F0EBE2" stroke="#E9E2DA"/>
+  <text x="1484" y="54" font-family="Manrope, Arial, sans-serif" font-size="14" fill="#6F665F" text-anchor="middle">2020–2023</text>
+
+  <!-- KPI cards -->
+  <g font-family="Manrope, Arial, sans-serif">
+    <g transform="translate(56,132)">
+      <rect width="342" height="120" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+      <text x="28" y="42" font-size="14" fill="#6F665F">Total Sales</text>
+      <text x="28" y="86" font-size="34" font-weight="800" fill="#3F332B">$2.97M</text>
+      <text x="28" y="106" font-size="13" fill="#555934">+8.1% YoY</text>
+    </g>
+    <g transform="translate(419,132)">
+      <rect width="342" height="120" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+      <text x="28" y="42" font-size="14" fill="#6F665F">Total Profit</text>
+      <text x="28" y="86" font-size="34" font-weight="800" fill="#3F332B">$286K</text>
+      <text x="28" y="106" font-size="13" fill="#555934">+5.4% YoY</text>
+    </g>
+    <g transform="translate(782,132)">
+      <rect width="342" height="120" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+      <text x="28" y="42" font-size="14" fill="#6F665F">Orders</text>
+      <text x="28" y="86" font-size="34" font-weight="800" fill="#3F332B">5,009</text>
+      <text x="28" y="106" font-size="13" fill="#6F665F">Stable vs last year</text>
+    </g>
+    <g transform="translate(1145,132)">
+      <rect width="399" height="120" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+      <text x="28" y="42" font-size="14" fill="#6F665F">Return Rate</text>
+      <text x="28" y="86" font-size="34" font-weight="800" fill="#3F332B">5.8%</text>
+      <text x="28" y="106" font-size="13" fill="#8C5B3E">-0.3% YoY</text>
+    </g>
+  </g>
+
+  <!-- Sales trend (line chart) -->
+  <g transform="translate(56,286)">
+    <rect width="700" height="546" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+    <text x="28" y="40" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#3F332B">Monthly Sales Trend</text>
+    <g transform="translate(30,80)">
+      <line x1="0" y1="380" x2="640" y2="380" stroke="#E9E2DA"/>
+      <polyline points="0,320 60,300 120,260 180,300 240,220 300,240 360,180 420,210 480,150 540,170 600,120 640,140"
+        fill="none" stroke="#555934" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <polygon points="0,320 60,300 120,260 180,300 240,220 300,240 360,180 420,210 480,150 540,170 600,120 640,140 640,380 0,380"
+        fill="#555934" opacity="0.08"/>
+    </g>
+    <g transform="translate(30,478)" font-family="Manrope, Arial, sans-serif" font-size="12" fill="#6F665F">
+      <text x="0" y="0">2020</text><text x="290" y="0">2021–22</text><text x="590" y="0">2023</text>
+    </g>
+  </g>
+
+  <!-- Sales by region (bar chart) -->
+  <g transform="translate(780,286)">
+    <rect width="380" height="546" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+    <text x="28" y="40" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#3F332B">Sales by Region</text>
+    <g transform="translate(28,70)" font-family="Manrope, Arial, sans-serif" font-size="13" fill="#3F332B">
+      <text x="0" y="14">West</text>
+      <rect x="0" y="24" width="300" height="16" rx="8" fill="#F0EBE2"/>
+      <rect x="0" y="24" width="270" height="16" rx="8" fill="url(#ssBar1)"/>
+
+      <text x="0" y="74" >East</text>
+      <rect x="0" y="84" width="300" height="16" rx="8" fill="#F0EBE2"/>
+      <rect x="0" y="84" width="228" height="16" rx="8" fill="url(#ssBar1)"/>
+
+      <text x="0" y="134">Central</text>
+      <rect x="0" y="144" width="300" height="16" rx="8" fill="#F0EBE2"/>
+      <rect x="0" y="144" width="168" height="16" rx="8" fill="url(#ssBar1)"/>
+
+      <text x="0" y="194">South</text>
+      <rect x="0" y="204" width="300" height="16" rx="8" fill="#F0EBE2"/>
+      <rect x="0" y="204" width="120" height="16" rx="8" fill="url(#ssBar1)"/>
+    </g>
+    <text x="28" y="330" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#3F332B">Top Categories</text>
+    <g transform="translate(28,352)" font-family="Manrope, Arial, sans-serif" font-size="13" fill="#6F665F">
+      <circle cx="6" cy="0" r="5" fill="#555934"/><text x="20" y="4">Technology — 38%</text>
+      <circle cx="6" cy="26" r="5" fill="#BF9B7A"/><text x="20" y="30">Furniture — 33%</text>
+      <circle cx="6" cy="52" r="5" fill="#8C5B3E"/><text x="20" y="56">Office Supplies — 29%</text>
+    </g>
+  </g>
+
+  <!-- Customer segments (donut) -->
+  <g transform="translate(1184,286)">
+    <rect width="360" height="546" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+    <text x="28" y="40" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#3F332B">Customer Segments</text>
+    <g transform="translate(180,220)">
+      <circle r="110" fill="none" stroke="#F0EBE2" stroke-width="32"/>
+      <circle r="110" fill="none" stroke="#555934" stroke-width="32" stroke-dasharray="380 691" transform="rotate(-90)"/>
+      <circle r="110" fill="none" stroke="#BF9B7A" stroke-width="32" stroke-dasharray="207 691" stroke-dashoffset="-380" transform="rotate(-90)"/>
+      <circle r="110" fill="none" stroke="#8C5B3E" stroke-width="32" stroke-dasharray="104 691" stroke-dashoffset="-587" transform="rotate(-90)"/>
+    </g>
+    <g transform="translate(40,400)" font-family="Manrope, Arial, sans-serif" font-size="13" fill="#6F665F">
+      <circle cx="6" cy="0" r="5" fill="#555934"/><text x="20" y="4">Consumer — 55%</text>
+      <circle cx="6" cy="26" r="5" fill="#BF9B7A"/><text x="20" y="30">Corporate — 30%</text>
+      <circle cx="6" cy="52" r="5" fill="#8C5B3E"/><text x="20" y="56">Home Office — 15%</text>
+    </g>
+  </g>
+</svg>

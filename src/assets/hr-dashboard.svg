@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="hrTitle">
+  <title id="hrTitle">HR Analytics Dashboard preview</title>
+  <defs>
+    <linearGradient id="hrBar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555934"/>
+      <stop offset="1" stop-color="#6b7143"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="96" fill="#FBF9F5"/>
+  <rect x="0" y="95" width="1600" height="1" fill="#E9E2DA"/>
+  <text x="56" y="58" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="800" fill="#3F332B">HR Analytics Overview</text>
+  <rect x="1230" y="34" width="120" height="30" rx="15" fill="#F0EBE2" stroke="#E9E2DA"/>
+  <text x="1290" y="54" font-family="Manrope, Arial, sans-serif" font-size="14" fill="#6F665F" text-anchor="middle">2024</text>
+  <rect x="1364" y="34" width="180" height="30" rx="15" fill="#F0EBE2" stroke="#E9E2DA"/>
+  <text x="1454" y="54" font-family="Manrope, Arial, sans-serif" font-size="14" fill="#6F665F" text-anchor="middle">All Departments</text>
+
+  <!-- KPI cards -->
+  <g font-family="Manrope, Arial, sans-serif">
+    <g transform="translate(56,132)">
+      <rect width="342" height="120" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+      <text x="28" y="42" font-size="14" fill="#6F665F">Total Employees</text>
+      <text x="28" y="86" font-size="34" font-weight="800" fill="#3F332B">1,248</text>
+      <text x="28" y="106" font-size="13" fill="#555934">+4.2% vs last year</text>
+    </g>
+    <g transform="translate(419,132)">
+      <rect width="342" height="120" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+      <text x="28" y="42" font-size="14" fill="#6F665F">Average Salary</text>
+      <text x="28" y="86" font-size="34" font-weight="800" fill="#3F332B">$72.4K</text>
+      <text x="28" y="106" font-size="13" fill="#555934">+1.8% vs last year</text>
+    </g>
+    <g transform="translate(782,132)">
+      <rect width="342" height="120" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+      <text x="28" y="42" font-size="14" fill="#6F665F">Attrition Rate</text>
+      <text x="28" y="86" font-size="34" font-weight="800" fill="#3F332B">12.3%</text>
+      <text x="28" y="106" font-size="13" fill="#8C5B3E">-0.6% vs last year</text>
+    </g>
+    <g transform="translate(1145,132)">
+      <rect width="399" height="120" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+      <text x="28" y="42" font-size="14" fill="#6F665F">Average Tenure</text>
+      <text x="28" y="86" font-size="34" font-weight="800" fill="#3F332B">3.4 yrs</text>
+      <text x="28" y="106" font-size="13" fill="#6F665F">Stable vs last year</text>
+    </g>
+  </g>
+
+  <!-- Headcount by department (bar chart) -->
+  <g transform="translate(56,286)">
+    <rect width="700" height="546" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+    <text x="28" y="40" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#3F332B">Headcount by Department</text>
+    <g transform="translate(40,80)">
+      <line x1="0" y1="400" x2="620" y2="400" stroke="#E9E2DA"/>
+      <g font-family="Manrope, Arial, sans-serif" font-size="12" fill="#6F665F">
+        <rect x="20"  y="180" width="66" height="220" rx="6" fill="url(#hrBar1)"/>
+        <rect x="112" y="120" width="66" height="280" rx="6" fill="#BF9B7A"/>
+        <rect x="204" y="230" width="66" height="170" rx="6" fill="url(#hrBar1)"/>
+        <rect x="296" y="90"  width="66" height="310" rx="6" fill="#BF9B7A"/>
+        <rect x="388" y="260" width="66" height="140" rx="6" fill="url(#hrBar1)"/>
+        <rect x="480" y="160" width="66" height="240" rx="6" fill="#BF9B7A"/>
+        <text x="53"  y="420" text-anchor="middle">Sales</text>
+        <text x="145" y="420" text-anchor="middle">Tech</text>
+        <text x="237" y="420" text-anchor="middle">Ops</text>
+        <text x="329" y="420" text-anchor="middle">Finance</text>
+        <text x="421" y="420" text-anchor="middle">HR</text>
+        <text x="513" y="420" text-anchor="middle">Support</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Gender / dept distribution (donut) -->
+  <g transform="translate(780,286)">
+    <rect width="380" height="546" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+    <text x="28" y="40" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#3F332B">Workforce Composition</text>
+    <g transform="translate(190,230)">
+      <circle r="120" fill="none" stroke="#F0EBE2" stroke-width="34"/>
+      <circle r="120" fill="none" stroke="#555934" stroke-width="34" stroke-dasharray="452 754" transform="rotate(-90)"/>
+      <circle r="120" fill="none" stroke="#BF9B7A" stroke-width="34" stroke-dasharray="226 754" stroke-dashoffset="-452" transform="rotate(-90)"/>
+      <circle r="120" fill="none" stroke="#8C5B3E" stroke-width="34" stroke-dasharray="76 754" stroke-dashoffset="-678" transform="rotate(-90)"/>
+      <text x="0" y="-4" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="800" fill="#3F332B">1,248</text>
+      <text x="0" y="22" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="13" fill="#6F665F">Employees</text>
+    </g>
+    <g transform="translate(40,410)" font-family="Manrope, Arial, sans-serif" font-size="13" fill="#6F665F">
+      <circle cx="6" cy="0" r="5" fill="#555934"/><text x="20" y="4">Full-time — 60%</text>
+      <circle cx="6" cy="26" r="5" fill="#BF9B7A"/><text x="20" y="30">Part-time — 30%</text>
+      <circle cx="6" cy="52" r="5" fill="#8C5B3E"/><text x="20" y="56">Contract — 10%</text>
+    </g>
+  </g>
+
+  <!-- Attrition trend (line chart) -->
+  <g transform="translate(1184,286)">
+    <rect width="360" height="546" rx="14" fill="#FFFFFF" stroke="#E9E2DA"/>
+    <text x="28" y="40" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="700" fill="#3F332B">Attrition Trend</text>
+    <g transform="translate(28,70)">
+      <line x1="0" y1="380" x2="300" y2="380" stroke="#E9E2DA"/>
+      <polyline points="0,300 50,280 100,320 150,250 200,270 250,200 300,230" fill="none" stroke="#8C5B3E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="300" cy="230" r="6" fill="#8C5B3E"/>
+    </g>
+    <g transform="translate(28,470)" font-family="Manrope, Arial, sans-serif" font-size="12" fill="#6F665F">
+      <text x="0" y="0">Jan</text><text x="145" y="0">Jun</text><text x="280" y="0">Dec</text>
+    </g>
+  </g>
+</svg>
