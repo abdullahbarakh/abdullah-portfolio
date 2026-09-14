@@ -1,5 +1,5 @@
 import { SITE } from '../siteConfig'
-import { LinkedInIcon, GitHubIcon, DownloadIcon, ArrowUpRightIcon } from './Icons'
+import { LinkedInIcon, GitHubIcon, DownloadIcon } from './Icons'
 import { useLanguage } from '../language'
 
 export default function Hero() {
@@ -80,15 +80,6 @@ export default function Hero() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="card absolute -bottom-8 -left-8 flex items-center gap-3 px-5 py-4 shadow-card">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
-              <ArrowUpRightIcon className="h-4 w-4" />
-            </div>
-            <div>
-              <p className="text-sm font-semibold text-ink">4.88 / 5.00</p>
-              <p className="text-xs text-muted">{t.hero.gpa}</p>
-            </div>
           </div>
         </div>
       </div>
