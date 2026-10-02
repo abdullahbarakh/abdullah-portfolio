@@ -4,7 +4,7 @@ export const SITE = {
   email: 'alsulamii.abdullah@gmail.com',
   linkedin: 'https://www.linkedin.com/in/abdullah-alsulamii',
   github: 'https://github.com/abdullahbarakh',
-  cvPath: '/Abdullah-CV.pdf',
+  cvPath: '/Abdullah-Alsulami-CV.pdf',
 }
 
 export const NAV_LINKS = [
