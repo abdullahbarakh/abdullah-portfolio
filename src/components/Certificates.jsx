@@ -1,3 +1,4 @@
+
 import { CertificateIcon } from './Icons'
 import { useLanguage } from '../language'
 
@@ -12,6 +13,12 @@ const CERTIFICATES = [
     issuer: 'SDA Academy',
     arabicTitle: 'معسكر علم البيانات',
   },
+  {
+    title: 'Microsoft Certified: Power BI Data Analyst Associate',
+    issuer: 'Microsoft',
+    arabicTitle: 'محلل بيانات Power BI معتمد من مايكروسوفت',
+    credentialUrl: 'https://learn.microsoft.com/en-us/users/abdullahalsulami-3715/credentials/certification/data-analyst-associate?tab=credentials-tab',
+  },
 ]
 
 export default function Certificates() {
@@ -25,14 +32,31 @@ export default function Certificates() {
           <h2 className="section-title">{t.certificates.title}</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {CERTIFICATES.map((cert) => (
             <div key={cert.title} className="card p-8 flex flex-col items-start">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
                 <CertificateIcon className="h-5 w-5" />
               </div>
-              <h3 className="mt-6 text-lg font-bold text-ink leading-snug">{isArabic ? cert.arabicTitle : cert.title}</h3>
-              <p className="mt-2 text-[15px] text-muted">{cert.issuer}</p>
+
+              <h3 className="mt-6 text-lg font-bold text-ink leading-snug">
+                {isArabic ? cert.arabicTitle : cert.title}
+              </h3>
+
+              <p className="mt-2 text-[15px] text-muted">
+                {cert.issuer}
+              </p>
+
+              {cert.credentialUrl && (
+                <a
+                  href={cert.credentialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 text-sm font-semibold text-accent hover:underline"
+                >
+                  {isArabic ? 'التحقق من الشهادة ↗' : 'Verify Credential ↗'}
+                </a>
+              )}
             </div>
           ))}
         </div>
